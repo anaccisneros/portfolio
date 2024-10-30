@@ -1,0 +1,366 @@
+body{
+    background-color: #090A0B;
+    padding: 7em 1em 2em 1em;
+    justify-content: center;
+}
+
+header{
+  background-color:  #202124;
+  position: fixed;
+  width: 100%;
+  top: 0em;
+  left: 0em;
+  padding-left: 2em;
+  padding-bottom: 1em;
+}
+
+h1 img{
+    max-width: 1em;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0em;
+    margin-bottom: 0em;
+}
+
+div.paper{
+    position: relative;
+    background-color: white;
+    margin: 0em 1.5em 0em 1.5em;
+    padding: 1em 2em 2em 2em;
+    display: center;
+    max-width: none;
+    background: linear-gradient(#F2F3F8, #F1F3F8);
+    background-blend-mode: multiply;
+    border: 2px solid #CAD0E3;
+      z-index: -2;
+}
+
+.paperclip {
+    position: relative;
+    top: 92px;
+    left: 53px;
+    width: 2em;
+    z-index: -1;
+}
+
+nav ul li{
+    display: inline;
+    padding-right: 2em;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 0.5px;
+  }
+
+h2{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    color: #4A7FE8;
+    margin-top: 2em;
+}
+
+h3{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    color: #110623;
+}
+
+h4{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style: italic;
+    font-weight: 90;
+    color: #484E51;
+    margin-bottom: 0em;
+    letter-spacing: 0.5px;
+
+}
+
+p{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style: normal;
+    font-weight: 90;
+    color: #3C4144;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    letter-spacing: 0.5px;  
+}
+
+p strong{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style: italic;
+    font-weight: 90;
+    color: #3C4144;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    letter-spacing: 0.5px;
+
+}
+
+p.description {
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 11pt;
+    color: #708087;
+    line-height: 1.75em;
+    margin-top: 0em;
+    margin-bottom: 2em;
+    letter-spacing: 0.5px;
+    max-width: 45em;
+    max-width: 60ch;
+}
+
+.inline-header{
+    display: inline-block;
+    margin-right: 5em;
+    margin-bottom: 0.5em;
+    margin-top: 0em;
+}
+
+.inline-header-projects{
+    display: inline-block;
+    margin-right: 1em;
+    margin-bottom: 0.5em;
+    margin-top: 1em;
+}
+
+
+ul {
+    padding-left: 1.5em;
+    margin-left: 0; 
+}
+
+ul li{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-size: 11pt;
+    color: #708087;
+    line-height: 1.75em;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    margin-left: 0em;
+    letter-spacing: 0.5px;
+    padding-left: 0em;
+}
+
+div.resumetext{
+    max-width: 50em;
+}
+
+img.tool-icons{
+    max-width: 3em;
+    max-height: 3em;
+    width: auto;
+    height: auto;
+    padding-right: 1.25em;
+    padding-bottom: 0.5em;
+}
+
+section.title{
+    max-width: 55ch;
+    margin: 0em 1em 1em 0em;
+}
+
+  
+section.workboxes{
+    background-color: #F1F3F8;
+    border-radius: 17px;
+    padding: 2em 2em 2em 2em;
+    max-height: auto;
+    max-width: 17em;
+    margin: 1em 2em 1em 0em;
+  }
+  
+  .workboxes h3{
+    margin-bottom: 0em;
+  }
+  
+  .workboxes p{
+    color: #7d7d7d;
+    margin: 0em;
+    padding-top: 1em;
+    font-size: 11pt;
+  }
+  
+  a.learn-more-button {
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 1px;
+    margin-top: 1em;
+    margin-right: 0.5em;
+    background-color: #2c81fc; 
+    color: #cbdbf7;
+    border-radius: 5px;
+  }
+
+h2.white{
+    color: #CAD0E3;
+}
+
+
+.workboxes-container {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+    justify-content: center;
+    margin-top: 5em;
+}
+
+div.workboxes-container-contact {
+    display: flex;
+    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
+    justify-content: center;
+    margin-top: 3em;
+}
+
+
+.workboxes img{
+    max-width: 17em;
+    max-height: auto;
+}
+
+.workboxes iframe{
+    max-width: 17em;
+    max-height: auto;
+}
+
+.logo-title{
+    max-width: 5em;
+    position: relative;
+    display: inline-flex;
+    align-items: center;
+    padding: 0em;
+    margin: 1em 0em 0em 0em;
+}
+
+.logo-title:hover::after {
+    content: "Ana Cisneros";
+    font-size: 16px; /* Adjust as needed */
+    color: #333; /* Adjust color as needed */
+    margin-left: 10px; /* Space between image and text */
+    display: inline;
+    min-width: 10em;
+    min-height: auto;
+}
+
+.logo-title img {
+    transition: transform 0.3s ease; /* Smooth transition */
+}
+
+.logo-title:hover img {
+    transform: translateY(-5px); /* Adjust value for desired jump height */
+}
+
+.divider {
+    border: none;            /* Removes default border */
+    height: 1px;              /* Adjust thickness */
+    background-color: #333;   /* Set color */
+    margin: 2em 0em 2em 0em;           /* Adjust spacing as needed */
+    width: 100%;              /* Set width, usually full */
+}
+
+img.projects {
+    max-width: 100%;
+    max-height: auto;
+    margin-bottom: 1em;
+}
+
+a.inline-header-projects-button{
+    margin: 0em 1em 0em 3em;
+}
+
+div.projects{
+    max-width: 78ch;
+}
+
+div.projects p{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-style:normal;
+    font-weight: 100;
+    color: #3C4144;
+    margin-top: 0em;
+    margin-bottom: 0em;
+    letter-spacing: 1px; 
+    line-height: 25px;
+    word-spacing: 1.5px;
+}
+
+div.projects h3{
+    color: #cbdbf7;
+}
+
+figcaption{
+    text-decoration: none;
+    color: #7d7d7d;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 9pt;
+    letter-spacing: 0.5px;
+    padding: 0em;
+}
+
+figure{
+    margin: 1em 1em 0em 1em;
+}
+
+.mail-icon {
+    font-size: 5rem; /* Adjust size as desired */
+    color: #333;
+    animation: shine 2s infinite linear;
+    padding: 0em 1em 0em 1em;
+  }
+
+  @keyframes shine {
+    0% {
+      text-shadow: 0 0 2px #fff, 0 0 10px #fff;
+    }
+    50% {
+      text-shadow: 0 0 10px #cbdbf7, 0 0 20px #4A7FE8, 0 0 30px #4A7FE8;
+    }
+    100% {
+      text-shadow: 0 0 2px #fff, 0 0 10px #fff;
+    }
+  }
+
+/* Contact */
+
+
+
+@media screen and (min-width: 65em){ 
+   
+    .flexbox {
+        display: flex;
+        gap: 1em; /* Adds space between <aside> and <main> */
+    }
+    
+    main {
+        flex: 3; /* Main content takes up 3 parts of the available space */
+        order: 2;
+        padding: 1em;
+        margin-top: 2em;
+    }
+    
+    aside {
+        flex: 1;
+        order: 1;
+        padding: 1em 3em 0em 2em;
+        margin-top: 2em;
+    }
+
+    div.paper{
+        padding: 0em 2em 1em 2em;
+        margin: 0em 4em 0em 4em;
+    }
+
+    .paperclip{
+        margin: 0em 4em 0em 4em;
+    }
+   
+    
+
+}
