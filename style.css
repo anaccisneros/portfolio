@@ -43,7 +43,7 @@ div.paper{
 
 nav ul li{
     display: inline;
-    padding-right: 2em;
+    padding: 1em 2em 0em 0em;
     font-family: "neue-haas-grotesk-display", sans-serif;
 }
 
