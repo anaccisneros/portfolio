@@ -35,7 +35,7 @@ div.paper{
 
 .paperclip {
     position:relative;
-    top: 93px;
+    top: 92px;
     left: 60px;
     width: 2em;
     z-index: -1;
@@ -198,7 +198,7 @@ section.workboxes{
     background-color: #F1F3F8;
     border-radius: 17px;
     padding: 1em;
-    margin: 1em 1em 0em 0em;
+    margin: 1em 2em 0em 0em;
   }
 
 
@@ -264,7 +264,7 @@ h2.white{
 }
 
 .workboxes-container-contact h4{
-    max-width: 30ch;
+    max-width: 45ch;
 }
 
 .workboxes img{
@@ -406,7 +406,7 @@ span.mail-icon {
 
     .workboxes-container-contact{
         justify-content: center;
-        margin: 15em 0em 0em 0em;
+        margin: 17em 0em 0em;
     }
     
    
