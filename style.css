@@ -43,7 +43,7 @@ div.paper{
 
 nav ul li{
     display: inline;
-    padding: 1em 2em 0em 0em;
+    margin: 0em 1em 0em 0em;
     font-family: "neue-haas-grotesk-display", sans-serif;
 }
 
@@ -226,6 +226,7 @@ section.workboxes{
     border: 0.5px solid #0463F1;
     color: #C3DBFE;
     border-radius: 5px;
+    margin: 0.75em 0em 0em 0em;
   }
 
   section.workboxes-contact a.contact-button{
