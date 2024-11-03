@@ -156,7 +156,10 @@ img.tool-icons{
     padding-bottom: 0.5em;
 }
   
-
+nav img{
+    width: 1em;
+    margin: 0em 0.5em 0em 0em;
+}
 
   
 section.workboxes{
@@ -197,20 +200,20 @@ section.workboxes{
   section.workboxes-contact{
     background-color: #F1F3F8;
     border-radius: 17px;
-    padding: 1em;
+    padding: 0.5em;
     margin: 1em 2em 0em 0em;
   }
 
 
   section.workboxes-contact img{
-   width: auto;
-   height: 3em;
+    padding: 0.5em 0em 0.5em 1.5em;
+    width: 2.3em;
    display: block;
   }
 
   section.workboxes-contact span.mail-icon{
     font-size: 2.2em;
-    padding: 0em 0em 0em 0.4em;
+    padding: 0.1em 0em 0.1em 0.4em;
     display: block;
    }
 
@@ -226,12 +229,24 @@ section.workboxes{
     border: 0.5px solid #0463F1;
     color: #C3DBFE;
     border-radius: 5px;
-    margin: 0.75em 0em 0em 0em;
+    margin: 0.75em 0em 0.5em 0em;
   }
 
-  section.workboxes-contact a.contact-button{
-    margin: 0.5em 0em 0em;
+  a.contact-button-linkedin {
+    display: inline-block;
+    padding: 5px 10px;
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 12pt;
+    letter-spacing: 1px;
+    background: linear-gradient(to right, #2c81fc, #0463F1);    
+    border: 0.5px solid #0463F1;
+    color: #C3DBFE;
+    border-radius: 5px;
+    margin: 0.75em 0em 0.5em 0em;
   }
+
 
 h2.white{
     color: #CAD0E3;
@@ -269,8 +284,7 @@ h2.white{
 }
 
 .workboxes img{
-    max-width: 17em;
-    max-height: auto;
+    max-width: 17em ;
 }
 
 .workboxes iframe{
@@ -313,11 +327,7 @@ h2.white{
     width: 100%;              /* Set width, usually full */
 }
 
-img.projects {
-    max-width: 100%;
-    max-height: auto;
-    margin-bottom: 1em;
-}
+
 
 a.inline-header-projects-button{
     margin: 0em 1em 0em 3em;
