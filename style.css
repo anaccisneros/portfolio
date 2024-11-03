@@ -1,6 +1,6 @@
 body{
     background-color: #090A0B;
-    margin: 7em 1em 5em 1em;
+    margin: 10em 1em 5em 1em;
     justify-content: center;
 }
 
@@ -18,9 +18,6 @@ h1 img{
     min-width: 1em;
     position: relative;
     display: inline-flex;
-    align-items: center;
-    padding: 0em;
-    margin-bottom: 0em;
 }
 
 div.paper{
@@ -223,7 +220,7 @@ section.workboxes{
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 12pt;
+    font-size: 10pt;
     letter-spacing: 1px;
     background: linear-gradient(to right, #2c81fc, #0463F1);    
     border: 0.5px solid #0463F1;
@@ -238,7 +235,7 @@ section.workboxes{
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-weight: 500;
     font-style: normal;
-    font-size: 12pt;
+    font-size: 10pt;
     letter-spacing: 1px;
     background: linear-gradient(to right, #2c81fc, #0463F1);    
     border: 0.5px solid #0463F1;
@@ -269,7 +266,7 @@ h2.white{
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
     justify-content: center;
-    margin: 13em 0em 4em 1em;
+    margin: 17em 0em 4em 1em;
 }
 
 .workboxes-container-contact {
