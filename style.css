@@ -20,6 +20,10 @@ h1 img{
     display: inline-flex;
 }
 
+span.resume_link{
+font-weight: bold;
+}
+
 div.paper{
     position: relative;
     background-color: white;
@@ -40,9 +44,11 @@ div.paper{
 
 nav ul li{
     display: inline;
-    margin: 0em 1em 0em 0em;
+    margin: 0em 2em 0em 0em;
     font-family: "neue-haas-grotesk-display", sans-serif;
 }
+
+
 
 a {
     text-decoration: none;
@@ -52,6 +58,11 @@ a {
     font-style: normal;
     letter-spacing: 0.5px;
   }
+
+  a:hover {
+    color: #4A7FE8;
+  }
+
 
 h2{
     font-family: "neue-haas-grotesk-display", sans-serif;
@@ -97,17 +108,11 @@ p{
     margin: 0em ;
 }
 
-p.inline-header{
-    margin: 0.5em 0em 0.5em 0em;
-}
 
 
-h4.resume-subheading{
-    margin: 0em 0em 0.3em;
-    }
 
     h4.resume-subheading-small{
-        margin: 0em 0em 0.3em;
+        margin: 0em 0em 1em 0em;
         font-size: 11pt;
         color: #7d7d7d;
         }
@@ -189,6 +194,10 @@ section.workboxes{
     border-radius: 5px;
   }
 
+  a.learn-more-button:hover{
+    background-color: #1544A2;
+  }
+
 
   /* Contact */
 
@@ -214,34 +223,10 @@ section.workboxes{
     display: block;
    }
 
-  a.contact-button {
-    display: inline-block;
-    padding: 5px 10px;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 10pt;
-    letter-spacing: 1px;
-    background: linear-gradient(to right, #2c81fc, #0463F1);    
-    border: 0.5px solid #0463F1;
-    color: #C3DBFE;
-    border-radius: 5px;
-    margin: 0.75em 0em 0.5em 0em;
-  }
 
-  a.contact-button-linkedin {
-    display: inline-block;
-    padding: 5px 10px;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 10pt;
-    letter-spacing: 1px;
-    background: linear-gradient(to right, #2c81fc, #0463F1);    
-    border: 0.5px solid #0463F1;
-    color: #C3DBFE;
-    border-radius: 5px;
-    margin: 0.75em 0em 0.5em 0em;
+  a.contact-button img {
+    margin: 0em 0em 0em 0.6em;
+    
   }
 
 
@@ -257,16 +242,13 @@ h2.white{
     margin: 1em 1em 0.5em 0em;
 }
 
-.workboxes-contact-title h4{
-    margin: 0em;
-}
 
 
 .workboxes-container {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
     justify-content: center;
-    margin: 17em 0em 4em 1em;
+    margin: 14em 0em 4em 1em;
 }
 
 .workboxes-container-contact {
@@ -325,7 +307,6 @@ h2.white{
 }
 
 
-
 a.inline-header-projects-button{
     margin: 0em 1em 0em 3em;
 }
@@ -334,16 +315,6 @@ div.projects{
     max-width: 78ch;
 }
 
-figcaption{
-    text-decoration: none;
-    color: #7d7d7d;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 400;
-    font-style: italic;
-    font-size: 9pt;
-    letter-spacing: 0.5px;
-    padding: 0em;
-}
 
 figure{
     margin: 1em 1em 0em 1em;
@@ -399,17 +370,18 @@ span.mail-icon {
     aside {
         flex: 1;
         order: 1;
-        padding: 1em 3em 0em 2em;
+        padding: 1em 5em 0em 2em;
         margin-top: 2em;
     }
 
     div.paper{
-        padding: 0em 3em 1em 3em;
-        margin: 0em 5em 0em 5em;
+        padding: 0em 5em 4em 5em;
+        margin-left: 10%;
+        margin-right: 10%;
     }
 
     .paperclip{
-        margin: 0em 4em;
+        margin: 0em 7em;
     }
 
     .workboxes-container-contact{
