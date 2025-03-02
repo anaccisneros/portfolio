@@ -78,8 +78,12 @@ h3{
 h4{
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-style: italic;
-    font-weight: 90;
-    color: #484E51;
+    font-weight: 500;
+    color: #1544A2;
+}
+
+main.resume h4{
+    margin: 0em 0em 0.5em 0em;
 }
 
 p{
@@ -94,7 +98,6 @@ p{
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-size: 11pt;
     color: #708087;
-    margin-top: 0em;
     margin-bottom: 2em;
     letter-spacing: 0.5px;
     max-width: 45em;
@@ -109,13 +112,11 @@ p{
 }
 
 
-
-
-    h4.resume-subheading-small{
-        margin: 0em 0em 1em 0em;
-        font-size: 11pt;
-        color: #7d7d7d;
-        }
+        h4 span.date_resume{
+            margin: 0em 0em 0em 2em;
+            font-size: 11pt;
+            color: #7d7d7d;
+            }
 
 
 
@@ -258,9 +259,6 @@ h2.white{
     margin: 12em 3em 0em 3em;
 }
 
-.workboxes-container-contact h4{
-    max-width: 45ch;
-}
 
 .workboxes img{
     max-width: 17em ;
