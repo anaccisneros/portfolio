@@ -1,6 +1,6 @@
 body{
     background-color: #090A0B;
-    margin: 7em 1.5em 0em 1.5em;
+    margin: 6.5em 1.5em 0em 1.5em;
     justify-content: center;
 }
 
@@ -10,7 +10,7 @@ header{
   width: 100%;
   top: 0em;
   left: 0em;
-  padding-left: 2em;
+  padding-left: 1em;
   padding-bottom: 1em;
 }
 
@@ -22,9 +22,14 @@ hr {
     border: 0; /* Remove the default border */
     height: 1px; /* Thickness of the line */
     background-color: #303436; /* Blue color for the line */
-    margin: 1em 0em 1em 0em; /* Center the line and add vertical margin */
+    margin: 1em 0em 0.5em 0em; /* Center the line and add vertical margin */
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
   }
+
+  hr.top {
+    height: 3px; /* Thickness of the line */
+  }
+
 
 footer h3{
     color: #7d7d7d;
@@ -70,7 +75,7 @@ div.paper{
 
 nav ul li{
     display: inline;
-    margin: 0em 1em 0em 0em;
+    margin: 0em 0.5em 0em 0em;
     font-family: "neue-haas-grotesk-display", sans-serif;
     background-color: #090A0B;
     border: 8px solid  #090A0B;
@@ -81,6 +86,7 @@ footer ul li{
     display: inline;
     font-family: "neue-haas-grotesk-display", sans-serif;
     border-radius:0.5em;
+    padding: 0em 1em 0em 0em;
 }
 
 footer a{
@@ -158,7 +164,7 @@ p{
 
 
         h4 span.date_resume{
-            margin: 0em 0em 0em 2em;
+            margin: 0em 0em 0em 1em;
             font-size: 11pt;
             color: #7d7d7d;
             }
@@ -204,9 +210,9 @@ img.tool-icons{
     padding-bottom: 0.5em;
 }
   
-nav img{
-    width: 1em;
-    margin: 0em 0.5em 0em 0em;
+nav ul li img {
+    max-width: 1em; /* Example: adjust the size of the image */
+    max-height: none; /* Keep aspect ratio intact */
 }
 
   
@@ -216,7 +222,7 @@ section.workboxes{
     padding: 2em 2em 2em 2em;
     max-height: auto;
     max-width: 17em;
-    margin: 0em 2em 2em 0em;
+    margin: 0em 0em 2em 0em;
   }
 
   
@@ -248,53 +254,16 @@ section.workboxes{
   /* Contact */
 
 
-
-  section.workboxes-contact{
-    background-color: #F1F3F8;
-    border-radius: 17px;
-    padding: 0.5em;
-    margin: 1em 2em 0em 0em;
-  }
-
-
-  section.workboxes-contact img{
-    padding: 0.5em 0em 0.5em 1.5em;
-    width: 2.3em;
-   display: block;
-  }
-
-  section.workboxes-contact span.mail-icon{
-    font-size: 2.2em;
-    padding: 0.1em 0em 0.1em 0.4em;
-    display: block;
-   }
-
-
-  a.contact-button img {
-    margin: 0em 0em 0em 0.6em;
-    
-  }
-
-
 h2.white{
     color: #CAD0E3;
 }
-
-.workboxes-contact-title{
-    margin: 0em 3em 1em 0em;
-}
-
-.workboxes-contact-title h2{
-    margin: 1em 1em 0.5em 0em;
-}
-
 
 
 .workboxes-container {
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
     justify-content: center;
-    margin: 14em 0em 4em 1em;
+    margin: 12em 0em 4em 0em;
 }
 
 .workboxes-container-contact {
@@ -367,7 +336,6 @@ figure{
 span.mail-icon {
     font-size: 1.2rem; /* Adjust size as desired */
     animation: shine 2s infinite linear;
-    padding: 0em 0em 0em 0.5em;
   }
 
   @keyframes shine {
@@ -423,12 +391,11 @@ span.mail-icon {
 
     div.paper{
         padding: 0em 5em 4em 5em;
-        margin-left: 12%;
-        margin-right: 12%;
+        margin: 0em 4em 4em 4em;
     }
 
     .paperclip{
-        margin: 0em 0em 0em 10em;
+        margin: 0em 0em 0em 8em;
     }
 
     .workboxes-container-contact{
