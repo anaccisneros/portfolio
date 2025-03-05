@@ -222,7 +222,7 @@ section.workboxes{
     padding: 2em 2em 2em 2em;
     max-height: auto;
     max-width: 17em;
-    margin: 0em 0em 2em 0em;
+    margin: 0em 1em 2em 1em;
   }
 
   
@@ -398,10 +398,6 @@ span.mail-icon {
         margin: 0em 0em 0em 8em;
     }
 
-    .workboxes-container-contact{
-        justify-content: center;
-        margin: 17em 0em 0em;
-    }
     
    
     
