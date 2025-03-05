@@ -5,7 +5,7 @@ body{
 }
 
 header{
-  background-color:  #202124;
+  background-color:  #131315;
   position: fixed;
   width: 100%;
   top: 0em;
@@ -19,15 +19,19 @@ footer{
 }
 
 hr {
-    border: 0; /* Remove the default border */
     height: 1px; /* Thickness of the line */
-    background-color: #303436; /* Blue color for the line */
-    margin: 1em 0em 0.5em 0em; /* Center the line and add vertical margin */
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for a 3D effect */
+    border-radius: 1px; /* Rounded corners */
+    background-color: #262A2B; /* Color of the main line */
+    border: none; /* Remove the default border */
+    box-shadow: 0 1px 2px #303436; /* White shadow */
   }
 
   hr.top {
     height: 3px; /* Thickness of the line */
+    border-radius: 1px; /* Rounded corners */
+    background-color: #43494C; /* Color of the main line */
+    border: none; /* Remove the default border */
+    box-shadow: 0 2px 3px #303436; /* White shadow */
   }
 
 
@@ -41,7 +45,8 @@ footer p{
 }
 
 figcaption{
-    color: #303436;
+    color: #262A2B;
+    font-size: 10pt;
 }
 
 h1 img{
@@ -78,7 +83,7 @@ nav ul li{
     margin: 0em 0.5em 0em 0em;
     font-family: "neue-haas-grotesk-display", sans-serif;
     background-color: #090A0B;
-    border: 8px solid  #090A0B;
+    border: 7px solid  #090A0B;
     border-radius:0.5em;
 }
 
@@ -126,6 +131,7 @@ h2{
 h3{
     font-family: "neue-haas-grotesk-display", sans-serif;
     color: #110623;
+    letter-spacing: 0.5px;
 }
 
 h4{
