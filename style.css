@@ -125,7 +125,7 @@ a {
 h2{
     font-family: "neue-haas-grotesk-display", sans-serif;
     color: #4A7FE8;
-    margin-top: 2em;
+    margin-top: 1em;
 }
 
 h3{
@@ -136,11 +136,10 @@ h3{
 
 h4{
     font-family: "neue-haas-grotesk-display", sans-serif;
-    font-style: italic;
     font-weight: 500;
     color: #1544A2;
     padding: 0em;
-    margin: 0em 0em 0.5em 0em;
+    margin: 0em 0em 0.4em 0em;
 }
 
 p{
@@ -194,11 +193,11 @@ ul {
 ul li{
     font-family: "neue-haas-grotesk-display", sans-serif;
     font-size: 11pt;
-    color: #708087;
+    color: #3C4144;
     line-height: 1.75em;
     margin-top: 0em;
     margin-bottom: 0em;
-    margin-left: 0em;
+    margin-left: 1em;
     letter-spacing: 0.5px;
     padding-left: 0em;
 }
@@ -356,10 +355,6 @@ span.mail-icon {
     }
   }
 
-.resumetext h3{
-    margin: 0em 0em 0.5em 0em;
-}
-
 
 
 
@@ -392,16 +387,15 @@ span.mail-icon {
         flex: 1;
         order: 1;
         padding: 1em 1em 0em 0em;
-        margin-top: 2em;
     }
 
     div.paper{
         padding: 0em 5em 4em 5em;
-        margin: 0em 11em 4em 11em;
+        margin: 0em 15em 4em 15em;
     }
 
     .paperclip{
-        margin: 0em 0em 0em 10em;
+        margin: 0em 0em 0em 15em;
     }
 
     .workboxes-container{
