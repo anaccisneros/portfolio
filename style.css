@@ -268,7 +268,7 @@ h2.white{
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
     justify-content: center;
-    margin: 12em 0em 4em 0em;
+    margin: 8em 0em 4em 0em;
 }
 
 .workboxes-container-contact {
@@ -281,6 +281,7 @@ h2.white{
 
 .workboxes img{
     max-width: 17em ;
+    max-height: 10em;
 }
 
 .workboxes iframe{
