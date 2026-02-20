@@ -5,7 +5,7 @@ body{
 }
 
 header{
-  background-color:  #131315;
+  background-color:  #1D1D20;
   position: fixed;
   width: 100%;
   top: 0em;
@@ -26,12 +26,13 @@ hr {
     box-shadow: 0 1px 2px #303436; /* White shadow */
   }
 
-  hr.top {
+  hr.divider {
     height: 3px; /* Thickness of the line */
     border-radius: 1px; /* Rounded corners */
     background-color: #43494C; /* Color of the main line */
     border: none; /* Remove the default border */
     box-shadow: 0 2px 3px #303436; /* White shadow */
+    margin: 4em 0em 0em 0em;
   }
 
 
@@ -113,12 +114,24 @@ a {
 
   .active a{
     color: #5EA0FD;
-    
+    text-decoration: underline;
   }
 
   .active a:hover{
     color: #FFFFE0;    
   }
+
+  h1{
+    font-family: "neue-haas-grotesk-display", sans-serif;
+    color: #3C4144;
+    margin-top: 1em;
+    letter-spacing: 0.5px;
+    margin-bottom: 0.5em;
+}
+
+h1 span.name{
+    color: #7d7d7d;
+}
 
 
 
@@ -148,6 +161,11 @@ p{
     font-weight: 90;
     color: #3C4144;
     line-height: 1.6em;
+    display: inline-block;
+    margin-right: 5em;
+    margin: 0em ;
+    letter-spacing: 0.5px;
+    word-spacing: 1px;
 }
 
 .resumetext p{
@@ -157,15 +175,9 @@ p{
     margin-bottom: 2em;
     letter-spacing: 0.5px;
     max-width: 45em;
-    max-width: 60ch;
     display: block;
 }
 
-p{
-    display: inline-block;
-    margin-right: 5em;
-    margin: 0em ;
-}
 
 
         h4 span.date_resume{
@@ -216,8 +228,13 @@ img.tool-icons{
 }
   
 nav ul li img {
-    max-width: 1em; /* Example: adjust the size of the image */
-    max-height: none; /* Keep aspect ratio intact */
+max-height: 1em; /* Example: adjust the size of the image */
+}
+
+nav ul li a {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.4rem;   /* space between text and icon */
 }
 
   
@@ -227,7 +244,7 @@ section.workboxes{
     padding: 2em 2em 2em 2em;
     max-height: auto;
     max-width: 17em;
-    margin: 0em 1em 2em 1em;
+    margin: 0em 1em 1em 0em;
   }
 
   
@@ -268,8 +285,34 @@ h2.white{
     display: flex;
     flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
     justify-content: center;
-    margin: 8em 0em 4em 0em;
+    padding: 7em 0em 4em 0em;
 }
+
+.hero {
+    display: flex;
+    align-items: flex-end;   /* Align children to bottom */
+    justify-content: space-between;
+    gap: 2.5em;
+    padding-top: 5em;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+.hero-text {
+    flex: 2;
+    max-width: 45em;
+}
+
+.hero-image {
+    flex: 1;
+    max-width: 5em;
+    height: auto;
+}
+
 
 .workboxes-container-contact {
     display: flex;
@@ -403,8 +446,31 @@ span.mail-icon {
         margin-left: 8em;
         margin-right: 8em;
     }
-    
-   
-    
 
+    section.hero{
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        gap: 4em;
+        padding: 8em 8em 2em 8em;
+    }
+    
+    .hero-text{
+        flex: 0 1 45em;
+        margin: 0;
+    }
+
+    .hero-image{
+        max-width: 7em;
+    }
+    
+    h1{
+        font-size: 30pt;
+        max-width: 20ch;
+    }
+
+    section.hero p{
+        font-size: 16pt;
+    }
+    
 }
