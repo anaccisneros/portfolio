@@ -130,7 +130,7 @@ a {
 }
 
 h1 span.name{
-    color: #7d7d7d;
+    color: #708087;
 }
 
 
@@ -145,6 +145,7 @@ h3{
     font-family: "neue-haas-grotesk-display", sans-serif;
     color: #110623;
     letter-spacing: 0.5px;
+    margin-bottom: 0.5em;
 }
 
 h4{
@@ -152,7 +153,9 @@ h4{
     font-weight: 500;
     color: #1544A2;
     padding: 0em;
-    margin: 0em 0em 0.4em 0em;
+    margin: 0em 0em 0.5em 0em;
+    letter-spacing: 0.5px;
+    font-size: 10pt;
 }
 
 p{
@@ -163,26 +166,22 @@ p{
     line-height: 1.6em;
     display: inline-block;
     margin-right: 5em;
-    margin: 0em ;
+    margin: 0em 0em 0em 0em;
     letter-spacing: 0.5px;
     word-spacing: 1px;
+    font-size: 12pt;
 }
 
-.resumetext p{
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-size: 11pt;
-    color: #708087;
-    margin-bottom: 2em;
-    letter-spacing: 0.5px;
-    max-width: 45em;
-    display: block;
+p.inline-header{
+    margin: 0.5em 0em 0.5em 0em;
+    max-width: 70ch;
 }
 
 
 
         h4 span.date_resume{
-            margin: 0em 0em 0em 1em;
-            font-size: 11pt;
+            margin: 0em 0em 0em 0.5em;
+            font-size: 10pt;
             color: #7d7d7d;
             }
 
@@ -204,7 +203,8 @@ ul {
 
 ul li{
     font-family: "neue-haas-grotesk-display", sans-serif;
-    font-size: 11pt;
+    font-size: 12pt;
+    max-width: 70ch;
     color: #3C4144;
     line-height: 1.75em;
     margin-top: 0em;
@@ -434,7 +434,7 @@ span.mail-icon {
     }
 
     div.paper{
-        padding: 1em 7em 4em 7em;
+        padding: 1em 5em 4em 5em;
         margin: 0em 15em 4em 15em;
     }
 
@@ -471,6 +471,10 @@ span.mail-icon {
 
     section.hero p{
         font-size: 16pt;
+    }
+    
+    h4{
+        font-size: 12pt;
     }
     
 }
