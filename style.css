@@ -1,483 +1,496 @@
-body{
-    background-color: #090A0B;
-    margin: 7em 2em 0em 2em;
-    justify-content: center;
+/* ============================================================
+   Ana Cisneros Portfolio — Unified Stylesheet
+   ============================================================ */
+
+/* ── Design Tokens ────────────────────────────────────────── */
+:root {
+  --bg:           #090A0B;
+  --surface:      #1D1D20;
+  --surface-alt:  #F1F3F8;
+  --border:       #262A2B;
+  --border-mid:   #303436;
+
+  --text-primary:   #3C4144;
+  --text-secondary: #708087;
+  --text-muted:     #7d7d7d;
+  --text-faint:     #43494C;
+
+  --accent:         #4A7FE8;
+  --accent-dark:    #1544A2;
+  --accent-light:   #cbdbf7;
+  --accent-btn:     #2c81fc;
+
+  --paper-bg:       linear-gradient(#F2F3F8, #F1F3F8);
+  --paper-border:   #CAD0E3;
+
+  --font: "neue-haas-grotesk-display", sans-serif;
+
+  --radius-sm:  5px;
+  --radius-md:  0.5em;
+  --radius-lg:  17px;
+
+  --header-h: 4.5rem;
 }
 
-header{
-  background-color:  #1D1D20;
-  position: fixed;
-  width: 100%;
-  top: 0em;
-  left: 0em;
-  padding-left: 1em;
-  padding-bottom: 1em;
-}
-
-footer{
-    margin: 3em 0em 0em 0em;
-}
-
-hr {
-    height: 1px; /* Thickness of the line */
-    border-radius: 1px; /* Rounded corners */
-    background-color: #262A2B; /* Color of the main line */
-    border: none; /* Remove the default border */
-    box-shadow: 0 1px 2px #303436; /* White shadow */
-  }
-
-  hr.divider {
-    height: 2px; /* Thickness of the line */
-    border-radius: 1px; /* Rounded corners */
-    background-color: #303436; /* Color of the main line */
-    border: none; /* Remove the default border */
-    box-shadow: 0 2px 3px #303436; /* White shadow */
-    margin: 4em 0em 0em 0em;
-  }
-
-
-footer h3{
-    color: #7d7d7d;
-}
-
-footer p{
-    margin: 0em 0em 0.5em 0em;
-    color: #43494C;
-}
-
-figcaption{
-    color: #262A2B;
-    font-size: 10pt;
-}
-
-h1 img{
-    min-width: 1em;
-    position: relative;
-    display: inline-flex;
-}
-
-span.resume_link{
-font-weight: bold;
-}
-
-div.paper{
-    position: relative;
-    background-color: white;
-    padding: 2em 2em 2em 2em;
-    margin: 0em 0em 5em 0em;
-    background: linear-gradient(#F2F3F8, #F1F3F8);
-    background-blend-mode: multiply;
-    border: 2px solid #CAD0E3;
-    z-index: -2;
-    max-width: 45em;
-}
-
-.paperclip {
-    position:relative;
-    top: 92px;
-    left: 60px;
-    width: 2em;
-    z-index: -1;
-}
-
-nav ul li{
-    display: inline;
-    margin: 0em 0.5em 0em 0em;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    background-color: #090A0B;
-    border: 7px solid  #090A0B;
-    border-radius:0.5em;
-}
-
-footer ul li{
-    display: inline;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    border-radius:0.5em;
-    padding: 0em 1em 0em 0em;
-    margin-left: 0em;
-    text-decoration: underline;
-}
-
-footer a{
-    color: #7d7d7d;
-}
-
-a {
-    text-decoration: none;
-    color: #708087;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    letter-spacing: 0.5px;
-  }
-
-  a:hover {
-    color: #FFFFE0;
-  }
-
-  .active a{
-    color: #5EA0FD;
-    text-decoration: underline;
-  }
-
-  .active a:hover{
-    color: #FFFFE0;    
-  }
-
-  h1{
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    color: #3C4144;
-    margin-top: 1em;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.5em;
-}
-
-h1 span.name{
-    color: #708087;
-}
-
-
-
-h2{
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    color: #4A7FE8;
-    margin-top: 1em;
-}
-
-h3{
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    color: #110623;
-    letter-spacing: 0.5px;
-    margin-bottom: 0.5em;
-}
-
-h4{
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 500;
-    color: #1544A2;
-    padding: 0em;
-    margin: 0em 0em 0.5em 0em;
-    letter-spacing: 0.5px;
-    font-size: 10pt;
-}
-
-p{
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-style: normal;
-    font-weight: 90;
-    color: #3C4144;
-    line-height: 1.6em;
-    display: inline-block;
-    margin-right: 5em;
-    margin: 0em 0em 0em 0em;
-    letter-spacing: 0.5px;
-    word-spacing: 1px;
-    font-size: 12pt;
-}
-
-p.inline-header{
-    margin: 0.5em 0em 0.5em 0em;
-    max-width: 70ch;
-}
-
-
-
-        h4 span.date_resume{
-            margin: 0em 0em 0em 0.5em;
-            font-size: 10pt;
-            color: #7d7d7d;
-            }
-
-
-
-
-.inline-header-projects{
-    display: inline-block;
-    margin-right: 1em;
-    margin-bottom: 0.5em;
-    margin-top: 1em;
-}
-
-
-ul {
-    padding-left: 0.3em;
-    margin-left: 0; 
-}
-
-ul li{
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-size: 12pt;
-    max-width: 70ch;
-    color: #3C4144;
-    line-height: 1.75em;
-    margin-top: 0em;
-    margin-bottom: 0em;
-    margin-left: 1em;
-    letter-spacing: 0.5px;
-    padding-left: 0em;
-}
-
-div.resumetext{
-    max-width: 50em;
-}
-
-img.tool-icons{
-    max-width: 3em;
-    max-height: 3em;
-    width: auto;
-    height: auto;
-    padding-right: 1.25em;
-    padding-bottom: 0.5em;
-}
-  
-nav ul li img {
-max-height: 1em; /* Example: adjust the size of the image */
-}
-
-nav ul li a {
-    display: inline-flex;
-    align-items: center;
-    margin-bottom: 1em;
-    gap: 0.4rem;   /* space between text and icon */
-}
-
-  
-section.workboxes{
-    background-color: #F1F3F8;
-    border-radius: 17px;
-    padding: 2em 2em 2em 2em;
-    max-height: auto;
-    max-width: 17em;
-    margin: 0em 1em 1em 0em;
-  }
-
-  
-  .workboxes p{
-    color: #7d7d7d;
-    padding-top: 0em;
-    font-size: 11pt;
-  }
-  
-  a.learn-more-button {
-    display: inline-block;
-    padding: 5px 10px;
-    font-family: "neue-haas-grotesk-display", sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    letter-spacing: 1px;
-    margin-top: 1em;
-    margin-right: 0.5em;
-    background-color: #2c81fc;
-    color: #cbdbf7;
-    border-radius: 5px;
-  }
-
-  a.learn-more-button:hover{
-    background-color: #1544A2;
-  }
-
-
-  /* Contact */
-
-
-h2.white{
-    color: #CAD0E3;
-}
-
-
-.workboxes-container {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
-    justify-content: center;
-    padding: 7em 0em 4em 0em;
-}
-
-.hero {
-    display: flex;
-    align-items: flex-end;   /* Align children to bottom */
-    justify-content: space-between;
-    margin: 13em 1em 0em 1em;
+/* ── Reset & Base ─────────────────────────────────────────── */
+*, *::before, *::after {
+  box-sizing: border-box;
 }
 
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
 
-
-
-.hero-text {
-    flex: 2;
-    max-width: 45em;
+body {
+  background-color: var(--bg);
+  margin: var(--header-h) 2em 0;
+  font-family: var(--font);
+  color: var(--text-primary);
 }
 
-.hero-image {
-    flex: 1;
-    max-width: 5em;
-    height: auto;
+/* ── Typography ───────────────────────────────────────────── */
+h1, h2, h3, h4 {
+  font-family: var(--font);
+  letter-spacing: 0.5px;
 }
 
-
-.workboxes-container-contact {
-    display: flex;
-    flex-wrap: wrap; /* Allows items to wrap to the next line if there's not enough space */
-    justify-content: flex-start;
-    margin: 12em 3em 0em 3em;
+h1 {
+  color: var(--text-secondary);
+  margin-top: 1em;
+  margin-bottom: 0.5em;
 }
 
-
-.workboxes img{
-    max-width: 17em ;
-    max-height: 10em;
+h1 span.name {
+  color: var(--text-secondary);
 }
 
-.workboxes iframe{
-    max-width: 17em;
-    max-height: auto;
+h2 {
+  color: var(--accent);
+  margin-top: 1em;
 }
 
-.logo-title{
-    max-width: 5em;
-    position: relative;
-    display: inline-flex;
-    align-items: center;
-    padding: 0em;
-    margin: 1em 0em 0em 0em;
+h3 {
+  color: #110623;
+  margin-bottom: 0.5em;
 }
 
-.logo-title:hover::after {
-    content: "Ana Cisneros";
-    font-size: 16px; /* Adjust as needed */
-    color: #333; /* Adjust color as needed */
-    margin-left: 10px; /* Space between image and text */
-    display: inline;
-    min-width: 10em;
-    min-height: auto;
+h4 {
+  font-weight: 500;
+  color: var(--accent-dark);
+  margin: 0 0 0.5em;
+  font-size: 10pt;
+}
+
+h4 span.date_resume {
+  margin-left: 0.5em;
+  font-size: 10pt;
+  color: var(--text-muted);
+}
+
+p {
+  font-weight: 300;
+  color: var(--text-primary);
+  line-height: 1.6em;
+  letter-spacing: 0.5px;
+  word-spacing: 1px;
+  font-size: 12pt;
+  margin: 0;
+}
+
+p.inline-header {
+  display: block;
+  margin: 0.5em 0;
+  max-width: 70ch;
+}
+
+figcaption {
+  color: var(--border-mid);
+  font-size: 10pt;
+}
+
+/* ── Links ────────────────────────────────────────────────── */
+a {
+  text-decoration: none;
+  color: var(--text-secondary);
+  font-family: var(--font);
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: #FFFFE0;
+}
+
+/* ── Lists ────────────────────────────────────────────────── */
+ul {
+  padding-left: 0.3em;
+  margin: 0;
+}
+
+ul li {
+  font-family: var(--font);
+  font-size: 12pt;
+  max-width: 70ch;
+  color: var(--text-primary);
+  line-height: 1.75em;
+  margin-left: 1em;
+  letter-spacing: 0.5px;
+}
+
+/* ── Dividers ─────────────────────────────────────────────── */
+hr {
+  height: 1px;
+  border: none;
+  border-radius: 1px;
+  background-color: var(--border);
+  box-shadow: 0 1px 2px var(--border-mid);
+}
+
+hr.divider {
+  height: 2px;
+  background-color: var(--border-mid);
+  box-shadow: 0 2px 3px var(--border-mid);
+  margin: 4em 0 0;
+}
+
+/* ── Header & Navigation ──────────────────────────────────── */
+header {
+  background-color: var(--surface);
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0 1em 1em;
+  z-index: 100;
+}
+
+nav ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 0.5em;
+  font-family: var(--font);
+  background-color: var(--bg);
+  border: 7px solid var(--bg);
+  border-radius: var(--radius-md);
+}
+
+nav ul li a {
+  display: inline-flex;
+  align-items: center;
+  margin-bottom: 1em;
+  gap: 0.4rem;
+}
+
+nav ul li img {
+  max-height: 1em;
+}
+
+.active a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+.active a:hover {
+  color: #FFFFE0;
+}
+
+/* ── Logo ─────────────────────────────────────────────────── */
+.logo-title {
+  max-width: 5em;
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  padding: 0;
+  margin: 1em 0 0;
 }
 
 .logo-title img {
-    transition: transform 0.3s ease; /* Smooth transition */
+  transition: transform 0.3s ease;
 }
 
 .logo-title:hover img {
-    transform: translateY(-5px); /* Adjust value for desired jump height */
+  transform: translateY(-5px);
 }
 
-.divider {
-    border: none;            /* Removes default border */
-    height: 1px;              /* Adjust thickness */
-    background-color: #333;   /* Set color */
-    margin: 2em 0em 2em 0em;           /* Adjust spacing as needed */
-    width: 100%;              /* Set width, usually full */
+.logo-title:hover::after {
+  content: "Ana Cisneros";
+  font-size: 16px;
+  color: #333;
+  margin-left: 10px;
+  display: inline;
+  min-width: 10em;
 }
 
-
-a.inline-header-projects-button{
-    margin: 0em 1em 0em 3em;
+/* ── Hero Section ─────────────────────────────────────────── */
+.hero {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 13em 1em 0;
 }
 
-div.projects{
-    max-width: 78ch;
+.hero-text {
+  flex: 2;
+  max-width: 45em;
 }
 
-
-figure{
-    margin: 1em 1em 0em 1em;
+.hero-image {
+  flex: 1;
+  max-width: 5em;
+  height: auto;
 }
 
+/* ── Paper / Resume Card ──────────────────────────────────── */
+.paperclip {
+  position: relative;
+  top: 92px;
+  left: 60px;
+  width: 2em;
+  z-index: -1;
+}
 
+div.paper {
+  position: relative;
+  background: var(--paper-bg);
+  background-blend-mode: multiply;
+  border: 2px solid var(--paper-border);
+  padding: 2em;
+  margin: 0 0 5em;
+  border-radius: var(--radius-sm);
+  z-index: -2;
+  max-width: 45em;
+}
+
+div.resumetext {
+  max-width: 50em;
+}
+
+/* ── Tool Icons ───────────────────────────────────────────── */
+img.tool-icons {
+  max-width: 3em;
+  max-height: 3em;
+  width: auto;
+  height: auto;
+  padding-right: 1.25em;
+  padding-bottom: 0.5em;
+}
+
+/* ── Project Work Boxes ───────────────────────────────────── */
+.workboxes-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 7em 0 4em;
+}
+
+section.workboxes {
+  background-color: var(--surface-alt);
+  border-radius: var(--radius-lg);
+  padding: 2em;
+  max-width: 17em;
+  margin: 0 1em 1em 0;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+section.workboxes:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+}
+
+.workboxes p {
+  color: var(--text-muted);
+  font-size: 11pt;
+}
+
+.workboxes img {
+  max-width: 17em;
+  max-height: 10em;
+  width: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-sm);
+}
+
+.workboxes iframe {
+  max-width: 17em;
+}
+
+/* ── Buttons ──────────────────────────────────────────────── */
+a.learn-more-button {
+  display: inline-block;
+  padding: 5px 12px;
+  font-family: var(--font);
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 1em;
+  margin-right: 0.5em;
+  background-color: var(--accent-btn);
+  color: var(--accent-light);
+  border-radius: var(--radius-sm);
+  transition: background-color 0.2s ease;
+}
+
+a.learn-more-button:hover {
+  background-color: var(--accent-dark);
+  color: var(--accent-light);
+}
+
+/* ── Contact / White Heading ──────────────────────────────── */
+h2.white {
+  color: var(--paper-border);
+}
+
+.workboxes-container-contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  margin: 12em 3em 0;
+}
+
+/* ── Inline project helpers ───────────────────────────────── */
+.inline-header-projects {
+  display: inline-block;
+  margin: 1em 1em 0.5em 0;
+}
+
+a.inline-header-projects-button {
+  margin: 0 1em 0 3em;
+}
+
+div.projects {
+  max-width: 78ch;
+}
+
+figure {
+  margin: 1em 1em 0;
+}
+
+/* ── Mail icon animation ──────────────────────────────────── */
 span.mail-icon {
-    font-size: 1.2rem; /* Adjust size as desired */
-    animation: shine 2s infinite linear;
+  font-size: 1.2rem;
+  animation: shine 2s infinite linear;
+}
+
+@keyframes shine {
+  0%   { text-shadow: 0 0 2px transparent, 0 0 10px transparent; }
+  70%  { text-shadow: 0 0 3px var(--accent-light), 0 0 8px var(--accent), 0 0 6px var(--accent); }
+  100% { text-shadow: 0 0 2px transparent, 0 0 10px transparent; }
+}
+
+/* ── Footer ───────────────────────────────────────────────── */
+footer {
+  margin: 3em 0 0;
+}
+
+footer h3 {
+  color: var(--text-muted);
+}
+
+footer p {
+  margin: 0 0 0.5em;
+  color: var(--text-faint);
+}
+
+footer ul {
+  padding-left: 0;
+}
+
+footer ul li {
+  display: inline;
+  font-family: var(--font);
+  border-radius: var(--radius-md);
+  padding: 0 1em 0 0;
+  margin-left: 0;
+  text-decoration: underline;
+}
+
+footer a {
+  color: var(--text-muted);
+}
+
+/* ── Span helpers ─────────────────────────────────────────── */
+span.resume_link {
+  font-weight: bold;
+}
+
+/* ── h1 image inline ──────────────────────────────────────── */
+h1 img {
+  min-width: 1em;
+  position: relative;
+  display: inline-flex;
+}
+
+/* ── Large screen layout ──────────────────────────────────── */
+@media screen and (min-width: 65em) {
+
+  footer {
+    margin: 0 0 3em 2em;
   }
 
-  @keyframes shine {
-    0% {
-      text-shadow: 0 0 2px transparent, 0 0 10px transparent;
-    }
-    70% {
-      text-shadow: 0 0 3px #cbdbf7, 0 0 8px #4A7FE8, 0 0 6px #4A7FE8;
-    }
-    100% {
-      text-shadow: 0 0 2px transparent, 0 0 10px transparent;
-    }
+  .flexbox {
+    display: flex;
+    gap: 1em;
   }
 
+  main {
+    flex: 3;
+    order: 2;
+    padding: 1em;
+    margin-top: 2em;
+  }
 
+  aside {
+    flex: 1;
+    order: 1;
+    padding: 1em 1em 0 0;
+  }
 
+  div.paper {
+    padding: 1em 5em 4em;
+    margin: 0 15em 4em;
+    max-width: none;
+  }
 
+  .paperclip {
+    margin-left: 15em;
+  }
 
+  .workboxes-container {
+    margin-left: 8em;
+    margin-right: 8em;
+  }
 
+  section.hero {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    gap: 4em;
+    padding: 4em 8em 2em;
+  }
 
+  .hero-text {
+    flex: 0 1 45em;
+    margin: 0;
+  }
 
-/* Big Screens */
+  .hero-image {
+    max-width: 7em;
+  }
 
+  h1 {
+    font-size: 30pt;
+    max-width: 20ch;
+  }
 
-@media screen and (min-width: 65em){ 
-   
-    .flexbox {
-        display: flex;
-        gap: 1em; /* Adds space between <aside> and <main> */
-    }
+  section.hero p {
+    font-size: 16pt;
+  }
 
-    footer{
-        margin: 0em 0em 3em 2em;
-    }
-    
-    main {
-        flex: 3; /* Main content takes up 3 parts of the available space */
-        order: 2;
-        padding: 1em;
-        margin-top: 2em;
-    }
-    
-    aside {
-        flex: 1;
-        order: 1;
-        padding: 1em 1em 0em 0em;
-    }
-
-    div.paper{
-        padding: 1em 5em 4em 5em;
-        margin: 0em 15em 4em 15em;
-    }
-
-    .paperclip{
-        margin: 0em 0em 0em 15em;
-    }
-
-    .workboxes-container{
-        margin-left: 8em;
-        margin-right: 8em;
-    }
-
-    section.hero{
-        display: flex;
-        align-items: flex-end;
-        justify-content: flex-start;
-        gap: 4em;
-        padding: 4em 8em 2em 8em;
-    }
-    
-    .hero-text{
-        flex: 0 1 45em;
-        margin: 0;
-    }
-
-    .hero-image{
-        max-width: 7em;
-    }
-    
-    h1{
-        font-size: 30pt;
-        max-width: 20ch;
-    }
-
-    section.hero p{
-        font-size: 16pt;
-    }
-    
-    h4{
-        font-size: 12pt;
-    }
-    
+  h4 {
+    font-size: 12pt;
+  }
 }
