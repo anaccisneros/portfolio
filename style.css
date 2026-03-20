@@ -97,7 +97,21 @@ p {
   margin: 0;
 }
 
-p.inline-header {
+p.hero-intro {
+  color: var(--text-secondary);
+  display: block;
+}
+
+p.hero-intro a {
+  color: var(--accent);
+  text-decoration: underline;
+}
+
+p.hero-intro a:hover {
+  color: #FFFFE0;
+}
+
+
   display: block;
   margin: 0.5em 0;
   max-width: 70ch;
@@ -166,7 +180,7 @@ header {
 }
 
 nav ul {
-  padding: 0;
+  padding: 0.75em 0 0;
   margin: 0;
 }
 
@@ -231,7 +245,7 @@ nav ul li img {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin: 13em 1em 0;
+  margin: 11em 1em 0;
 }
 
 .hero-text {
@@ -272,10 +286,9 @@ div.resumetext {
 
 /* ── Tool Icons ───────────────────────────────────────────── */
 img.tool-icons {
-  max-width: 3em;
-  max-height: 3em;
-  width: auto;
-  height: auto;
+  width: 3em;
+  height: 3em;
+  object-fit: contain;
   padding-right: 1.25em;
   padding-bottom: 0.5em;
 }
@@ -292,7 +305,7 @@ section.workboxes {
   background-color: var(--surface-alt);
   border-radius: var(--radius-lg);
   padding: 2em;
-  max-width: 17em;
+  max-width: 24em;
   margin: 0 1em 1em 0;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
@@ -308,15 +321,15 @@ section.workboxes:hover {
 }
 
 .workboxes img {
-  max-width: 17em;
-  max-height: 10em;
+  max-width: 100%;
+  max-height: 14em;
   width: 100%;
   object-fit: cover;
   border-radius: var(--radius-sm);
 }
 
 .workboxes iframe {
-  max-width: 17em;
+  max-width: 100%;
 }
 
 /* ── Buttons ──────────────────────────────────────────────── */
