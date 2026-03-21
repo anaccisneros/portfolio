@@ -175,7 +175,7 @@ header {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 0 1em 1em;
+  padding: 0 1em 1em 1em;
   z-index: 100;
 }
 
@@ -215,15 +215,19 @@ nav ul li img {
 
 /* ── Logo ─────────────────────────────────────────────────── */
 .logo-title {
-  max-width: 5em;
   position: relative;
   display: inline-flex;
   align-items: center;
   padding: 0;
   margin: 1em 0 0;
+  width: 2em;
+  flex-shrink: 0;
 }
 
 .logo-title img {
+  width: 100%;
+  height: auto;
+  display: block;
   transition: transform 0.3s ease;
 }
 
@@ -245,12 +249,13 @@ nav ul li img {
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin: 11em 1em 0;
+  margin: 12em 1em 0;
 }
 
 .hero-text {
   flex: 2;
   max-width: 45em;
+  padding-top: 1.5em;
 }
 
 .hero-image {
@@ -286,7 +291,7 @@ div.resumetext {
 
 /* ── Tool Icons ───────────────────────────────────────────── */
 img.tool-icons {
-  width: 3em;
+  min-width: 3em;
   height: 3em;
   object-fit: contain;
   padding-right: 1.25em;
