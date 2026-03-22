@@ -31,14 +31,52 @@
 
   <section class="hero">
     <div class="hero-text">
-      <h1>Hello, I'm <span class="name">Ana Cisneros</span>. Welcome to my portfolio.</h1>
-      <p class="hero-intro">
-        I'm a technically trained designer with hands-on experience across product, UX, and marketing.
-        Check out my <a href="#resume">resume</a> below or some <a href="projects.html">projects here</a>.
-      </p>
+      <h1>Hello, I'm <span class="name">Ana Cisneros</span>.</h1>
+      <div class="hero-role">
+        <span class="role-static">Currently working as a</span>
+        <div class="role-dynamic"><span class="role-cycling" id="cyclingRole"></span><span class="hero-cursor" id="heroCursor"></span></div>
+      </div>
+      <div class="hero-links">
+        <a href="#resume" class="hero-cta">Resume</a>
+        <a href="projects.html" class="hero-cta">Projects</a>
+      </div>
     </div>
     <img src="Hero.gif" alt="Ana Cisneros logo illustration" class="hero-image" />
   </section>
+
+  <script>
+  (function () {
+    const roles = ['UX Designer', 'Product Designer', 'Motion Designer', 'Design Thinker'];
+    let roleIdx = 0, charIdx = 0, deleting = false;
+    const el = document.getElementById('cyclingRole');
+
+    function typeStep() {
+      const word = roles[roleIdx];
+      if (!deleting) {
+        charIdx++;
+        el.textContent = word.slice(0, charIdx);
+        if (charIdx === word.length) {
+          deleting = true;
+          setTimeout(typeStep, 2000);
+        } else {
+          setTimeout(typeStep, 80);
+        }
+      } else {
+        charIdx--;
+        el.textContent = word.slice(0, charIdx);
+        if (charIdx === 0) {
+          deleting = false;
+          roleIdx = (roleIdx + 1) % roles.length;
+          setTimeout(typeStep, 300);
+        } else {
+          setTimeout(typeStep, 45);
+        }
+      }
+    }
+
+    setTimeout(typeStep, 600);
+  })();
+  </script>
 
   <hr class="divider" id="resume" />
 
@@ -117,7 +155,6 @@
   </div><!-- .paper -->
 
 <script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script></body>
-
 
 <footer>
   <hr />
