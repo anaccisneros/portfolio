@@ -5,7 +5,7 @@
 /* ── Design Tokens ────────────────────────────────────────── */
 :root {
   /* Surfaces */
-  --bg:           #090A0B;
+  --bg:           radial-gradient(circle at 50% 0%, #090A0B 0%, #1B0E3A 100%);
   --surface:      #1D1D20;
   --surface-alt:  #F1F3F8;
 
@@ -52,7 +52,7 @@ html {
 }
 
 body {
-  background-color: var(--bg);
+  background: var(--bg);
   margin: var(--header-h) 2em 0;
   font-family: var(--font);
   color: var(--text-primary);
@@ -192,8 +192,7 @@ nav ul li a {
   align-items: center;
   margin-bottom: 1em;
   gap: 0.4rem;
-  padding: 4px 12px;
-  border-radius: 8px;
+  padding: 3px 12px;
   color: var(--text-muted);
   background-color: rgba(241, 243, 248, 0.04);
   border: 1px solid rgba(241, 243, 248, 0.18);
@@ -204,23 +203,24 @@ nav ul li a {
     0 0 9px rgba(0, 0, 0, 0.1),
     0 3px 8px rgba(0, 0, 0, 0.08);
   transition: background-color 0.3s ease, color 0.2s ease;
+  border-radius: 25px;
 }
 
 nav ul li a::before {
+    border-radius: 25px;
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 8px;
   background: linear-gradient(to bottom right, rgba(241,243,248,0.18), transparent, transparent);
   opacity: 0.7;
   pointer-events: none;
 }
 
 nav ul li a::after {
+    border-radius: 25px;
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 8px;
   background: linear-gradient(to top left, rgba(241,243,248,0.08), transparent, transparent);
   opacity: 0.5;
   pointer-events: none;
@@ -233,7 +233,6 @@ nav ul li a:hover {
 
 .active a {
   color: var(--surface-alt);
-  text-decoration: underline;
   background-color: rgba(74, 127, 232, 0.2);
   border-color: rgba(74, 127, 232, 0.35);
 }
@@ -256,7 +255,7 @@ nav ul li img {
   align-items: center;
   padding: 0;
   margin: 1em 0em 0em 0.5em;
-  width: 2em;
+  width: 2.5em;
   flex-shrink: 0;
 }
 
@@ -269,15 +268,6 @@ nav ul li img {
 
 .logo-title:hover img {
   transform: translateY(-5px);
-}
-
-.logo-title:hover::after {
-  content: "Ana Cisneros";
-  font-size: 16px;
-  color: var(--text-muted);
-  margin-left: 10px;
-  display: inline;
-  min-width: 10em;
 }
 
 /* ── Hero Animations ──────────────────────────────────────── */
@@ -342,6 +332,8 @@ nav ul li img {
   display: flex;
   align-items: center;
   gap: 0.25em;
+  white-space: nowrap;
+  min-height: 1.2em;
 }
 
 .role-static {
@@ -380,7 +372,7 @@ a.hero-cta {
   letter-spacing: 1px;
   color: var(--surface-alt);
   padding: 6px 16px;
-  border-radius: 8px;
+  border-radius: 25px;
   text-decoration: none;
   display: inline-flex;
   align-items: center;
@@ -400,7 +392,7 @@ a.hero-cta::before {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 8px;
+  border-radius: 25px;
   background: linear-gradient(to bottom right, rgba(241,243,248,0.6), transparent, transparent);
   opacity: 0.7;
   pointer-events: none;
@@ -410,7 +402,7 @@ a.hero-cta::after {
   content: '';
   position: absolute;
   inset: 0;
-  border-radius: 8px;
+  border-radius: 25px;
   background: linear-gradient(to top left, rgba(241,243,248,0.3), transparent, transparent);
   opacity: 0.5;
   pointer-events: none;
@@ -643,18 +635,13 @@ h1 img {
     align-items: center;
     justify-content: flex-start;
     gap: 0em;
-    padding: 0em 8em 4em;
+    padding: 0em 0em 3em 4em;
     min-height: 60vh;
   }
 
   .hero-text {
     flex: 0 1 45em;
     margin: 0;
-  }
-
-  .hero-image {
-    max-width: 7em;
-    margin-left: 0;
   }
 
   h1 {
